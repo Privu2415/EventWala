@@ -10,6 +10,7 @@ const events = [
 
 const users = JSON.parse(localStorage.getItem("users")) || [];
 let currentUser = JSON.parse(localStorage.getItem("currentUser")) || null;
+const isAuthenticated = () => !!localStorage.getItem('jwtToken');
 
 function toggleMenu() {
   document.getElementById("navMenu").classList.toggle("active");
@@ -21,9 +22,9 @@ function formatDate(dateString) {
 
 
 function goToEventDetail(eventId) {
-  if (!currentUser) {
-    alert("Please login to view event details");
-    window.location.href = "login.html";
+  if (!isAuthenticated()) {
+    alert('Please login to view event details');
+    window.location.href = 'login.html';
     return;
   }
   window.location.href = `event-detail.html?id=${eventId}`;
