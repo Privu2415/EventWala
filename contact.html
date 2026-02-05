@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MusicWala</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <nav class="mw-navbar">
+    <div class="mw-nav-left">
+      <h2 class="mw-logo">MusicWala</h2>
+      <p class="mw-tagline">All Your Favourite are in one place</p>
+    </div>
+
+    <ul class="mw-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html" class="mw-signup">Sign Up</a></li>
+    </ul>
+  </nav>
+
+
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with MusicWala</p>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <div class="info-card">
+                        <h3>📍 Address</h3>
+                        <p>UIT<br>Bardhaman, West Bengal 713104<br>India</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📞 Phone</h3>
+                        <p>+91-8388928831<br>+91-9876543210</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>✉️ Email</h3>
+                        <p>privubrotha@gmail.com<br>privurbrotogarai@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Follow Us</h3>
+                        <p>
+                            <a href="https://www.facebook.com/privubroto.garai" class="fa fa-facebook">Facebook</a> | 
+                            <a href="https://www.instagram.com/privubrotha_garai_24/" class="fa fa-instagram">Instagram</a> | 
+                            <a href="https://www.linkedin.com/in/privubrotha-garai-30b1b232a/"class="fa fa-linkedIn">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                        <h2>Send us a Message</h2>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" name="phone" placeholder="+91-" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mw-footer">
+      <div class="mw-footer-container">
+
+        <div class="mw-footer-col">
+          <h3>MusicWala</h3>
+          <p>Your premier destination for Indian music events</p>
+        </div>
+
+        <div class="mw-footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="mw-footer-col">
+          <h4>Contact Info</h4>
+          <p>📍 Bardhaman, India</p>
+          <p>📞 +91-8388928831</p>
+          <p>✉️ musicwala@gmail.com</p>
+        </div>
+
+      </div>
+
+      <div class="mw-footer-bottom">
+        © 2026 MusicWala - All Rights Reserved
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

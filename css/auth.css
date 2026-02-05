@@ -1,0 +1,49 @@
+.auth-section{
+    padding: 100px 20px;
+    background: linear-gradient(135deg, rgb(65, 65, 167) 0% , rgb(88, 45, 23));
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-card{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow:0 10px 40px rgba(0, 0, 0, 0.2);
+    width:100% ;
+    max-width: 400px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(#e0e0e0);
+}
+
+.form-group label{
+    display: block;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.message{
+    margin-top: 15px ;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.message.error{
+    background-color: #d4edda;
+    color: rgb(199, 23, 23);
+}
+
+.message.success{
+    background-color: #e0e0e0;
+    color:rgb(8, 103, 26);
+}

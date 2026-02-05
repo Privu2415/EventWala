@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Events - MusicWala</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+
+  <nav class="mw-navbar">
+    <div class="mw-nav-left">
+      <h2 class="mw-logo">MusicWala</h2>
+      <p class="mw-tagline">All Your Favourite are in one place</p>
+    </div>
+
+    <ul class="mw-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html" class="mw-signup">Sign Up</a></li>
+    </ul>
+  </nav>
+    <section class="page-header">
+        <h1>All Events</h1>
+        <p>Discover amazing music concerts across India</p>
+    </section>
+
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by artist or event name...">
+                <button onclick="searchEvents()">Search</button>
+            </div>
+            <div class="filter-box">
+                <label>Filter by Genre:</label>
+                <select id="genreFilter" onchange="filterEvents()">
+                    <option value="">All Genres</option>
+                    <option value="Desi Hip Hop">Desi Hip Hop</option>
+                   
+                </select>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="events-listing">
+            <div class="events-grid" id="eventsContainer">
+                <!-- Events loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="mw-footer">
+      <div class="mw-footer-container">
+
+        <div class="mw-footer-col">
+          <h3>MusicWala</h3>
+          <p>Your premier destination for Indian music events</p>
+        </div>
+
+        <div class="mw-footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="mw-footer-col">
+          <h4>Contact Info</h4>
+          <p>📍 Bardhaman, India</p>
+          <p>📞 +91-8388928831</p>
+          <p>✉️ musicwala@gmail.com</p>
+        </div>
+
+      </div>
+
+      <div class="mw-footer-bottom">
+        © 2026 MusicWala - All Rights Reserved
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

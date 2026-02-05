@@ -1,0 +1,129 @@
+.about-content{
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(#ff6f3a);
+}
+.about-content h2{
+    color: var(#004e89);
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.about-content p{
+    font-size: 20px;
+    line-height:1.7;
+    color: rgb(128, 76, 85);
+}
+.page-header{
+    text-align: center;
+}
+.team-section{
+    font-size: 15px;
+
+}
+
+.team-card{
+    max-width: 300px;
+    margin:auto;
+    background: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.team-card-info{
+    padding: 20px;
+}
+
+.team-card h3{
+    font-size: 20px;
+}
+
+.team-card .small-text{
+    color: #777;
+    margin: 10px 0;
+}
+
+.social-links a {
+  color: #ff4d4d;
+  text-decoration: none;
+  border: 1px solid #ff4d4d;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    color: white;
+}
+.contact-section{
+    padding: 50px 20px;
+    background: #f7f7f7;
+}
+
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-info h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.info-card{
+    background:#fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;  
+}
+
+.info-card h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.info-card p{
+    color: #555;
+}
+
+.contact-form-wrapper{
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display:block;
+    margin-bottom: 5px;
+}
+
+.form-group input , .form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(54, 38, 38);
+    border-radius: 6px;
+}
+
+.contact-form .btn-primary{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-width: 12px;
+    border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
